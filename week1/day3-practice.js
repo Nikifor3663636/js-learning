@@ -1,7 +1,8 @@
 function multiplicationTable(num){
+    let result = ""
     for(let i = 1; i <= 10; i++){
-       const result = num * i
-        console.log(`${num} * ${i} = ${result}`)
+        result += `${num} * ${i} = ${num * i}\n`
     }
+    return result;
 }
-multiplicationTable(3);
+console.log(multiplicationTable(3));
